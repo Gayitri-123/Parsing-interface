@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #700426;
+  color: hsl(40, 18%, 97%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Upload & Panel Boxes */
+.box, .panel-box {
+  background: white;
+  color: #700426;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.box:hover, .panel-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Panel Layout */
+.panel {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.panel-box {
+  flex: 1;
+  margin: 10px;
+}
+
+/* File Display Section */
+.file-display {
+  margin-top: 40px;
+  width: 90%;
+  max-width: 800px;
+  background: white;
+  color: #700426;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.file-display h2 {
+  margin-bottom: 20px;
+}
+
+.file-display div {
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li:hover {
+  color: #ffcccb;
+  transform: scale(1.1);
+}
+
+nav ul li.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #700426;
+}
+
+form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #700426;
+  border-radius: 5px;
+  width: 250px;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #700426;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #a1053a;
+  transform: scale(1.05);
+}
+
+/* Signup Button */
+button.signup {
+  background-color: white;
+  color: #700426;
+  border: 2px solid #700426;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.signup:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container, .panel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box, .panel-box {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
